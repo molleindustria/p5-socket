@@ -1,3 +1,22 @@
+# Running this example
+
+Open the terminal and install the dependencies
+``npm install``
+
+Run server.js with node or nodemon (see below)
+
+``node server.js``
+
+or
+
+``nodemon server.js``
+
+Open multiple browser tabs and point them to 
+
+``localhost:3000``
+
+Click around.
+
 # P5.js and Socket
 
 The client application is in public/sketch.js.
