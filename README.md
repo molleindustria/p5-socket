@@ -22,6 +22,29 @@ The p5 commands are not recognized by VS Code so if you want some contextual cod
 
 [More information about p5 and VS code here](https://breaksome.tech/p5js-editor-how-to-set-up-visual-studio-code/)
 
+## .gitignore
+
+When you make commits in a git repository, you choose which files to stage and commit by using git add FILENAME and then git commit. But what if there are some files that you never want to commit? 
+
+That's where a .gitignore file comes in handy. It lets Git know that it should ignore certain files and not track them.
+In this case I don't want to share the node_modules in my project because it's better to let the users install them on their system.
+With ``npm install``
+
+## Nodemon
+
+Note that while the client (browser app) can be restarted with a refresh, the server keeps running until you shut it down. If you make changes you won't see them unless you restart the process.  
+
+If you want to stop the server and go back to the terminal press **CTRL+C**
+
+Let's try to use npm to install a utility called nodemon. Nodemon restarts the server every time a file in the folder changes. Exit the process and type:  
+`npm install -g nodemon`
+
+-g stands for global (I think). Nodemon will be now visible from everywhere in your system.
+
+Now do:
+
+`nodemon server.js`
+
 
 ## Publishing on Glitch
 
