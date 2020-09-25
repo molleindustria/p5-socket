@@ -28,7 +28,7 @@ function setup() {
 
 //this function is called continuously
 function draw() {
-
+    
 }
 
 //p5 function called on mouse press - send coordinates to server
@@ -39,6 +39,7 @@ function mousePressed() {
         console.log("Mouse pressed at " + mouseX + " " + mouseY);
         //send 
         socket.emit('clientAction', { x: mouseX, y: mouseY });
+
     }
 }
 
