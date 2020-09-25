@@ -10,7 +10,7 @@ function setup() {
     createCanvas(800, 600);
     //paint it white
     background(255, 255, 255);
-
+    
     //I create socket but I wait to assign all the functions before opening a connection
     socket = io({
         autoConnect: false
@@ -28,6 +28,7 @@ function setup() {
 
 //this function is called continuously
 function draw() {
+
 }
 
 //p5 function called on mouse press - send coordinates to server
@@ -44,7 +45,7 @@ function mousePressed() {
 //called by the server upon any user action including me
 function onAction(obj) {
     //change fill color to black
-    fill(0, 0, 0);
+    fill(255, 0, 0);
     //draw a circle
     ellipse(obj.x, obj.y, 20, 20);
 }

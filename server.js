@@ -39,7 +39,7 @@ io.on('connection', function (socket) {
         io.emit('action', obj);
 
         //sending to all clients except sender
-        //socket.broadcast.emit("message", "It wasn't you!");
+        socket.broadcast.emit("message", "It wasn't you!");
 
     });
 });
@@ -49,7 +49,7 @@ io.on('connection', function (socket) {
 
 
 //listen to the port 3000
-http.listen(3000, function () {
+http.listen(5000, function () {
     console.log('listening on *:3000');
 });
 
